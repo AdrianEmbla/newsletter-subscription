@@ -1,5 +1,5 @@
 import SubscribeForm from "./components/SubscribeForm";
-import UnsubscribeForm from "./components/Unsubscribe";
+import UnsubscribeForm from "./components/UnsubscribeForm";
 
 function App() {
   return (
