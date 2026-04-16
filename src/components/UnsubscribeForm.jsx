@@ -10,7 +10,7 @@ function UnsubscribeForm() {
 
   function validate() {
     const errs = {};
-    if (!EMAILS_REGEX.test(email)) errs.email = "ugyldig e-postadresse";
+    if (!EMAILS_REGEX.test(email)) errs.email = "Ugyldig e-postadresse";
     return errs;
   }
 

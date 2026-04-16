@@ -1,6 +1,12 @@
 import { useState, useRef } from "react";
 
-const ALLOWED_NEWSLETTERS = ["Anime", "Manga", "ToLove-Ru"];
+const ALLOWED_NEWSLETTERS = [
+  "Anime",
+  "Manga",
+  "ToLOVE-Ru",
+  "ToLOVE-Ru - Darkness",
+  "ToLOVE-Ru - Motto",
+];
 const EMAILS_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 function SubscribeForm() {
@@ -82,7 +88,7 @@ function SubscribeForm() {
 
       <div>
         <label htmlFor="sub-email">
-          Email *
+          E-post *
           <input
             id="sub-email"
             type="email"

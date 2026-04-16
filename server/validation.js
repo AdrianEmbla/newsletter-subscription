@@ -1,4 +1,10 @@
-const ALLOWED_NEWSLETTERS = ["Anime", "Manga", "ToLOVE-Ru"];
+const ALLOWED_NEWSLETTERS = [
+  "Anime",
+  "Manga",
+  "ToLOVE-Ru",
+  "ToLOVE-Ru - Darkness",
+  "ToLOVE-Ru - Motto",
+];
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
