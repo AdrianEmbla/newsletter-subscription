@@ -1,11 +1,11 @@
 import { useState, useRef } from "react";
 
 const ALLOWED_NEWSLETTERS = [
-  "Anime",
-  "Manga",
   "ToLOVE-Ru",
   "ToLOVE-Ru - Darkness",
   "ToLOVE-Ru - Motto",
+  "Anime",
+  "Manga",
 ];
 const EMAILS_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 

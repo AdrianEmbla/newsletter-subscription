@@ -59,6 +59,13 @@ h2 {
   color: #ffd700;
 }
 
+h2 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 section {
   background: rgba(30, 10, 50, 0.85);
   border: 1px solid #8b2fc9;
@@ -79,7 +86,7 @@ input[type="text"],
 input[type="email"],
 select {
   width: 100%;
-  padding: 12px;
+  padding: 2px;
   font-size: 1rem;
   min-height: 44px;
   background: #2a1545;
@@ -133,7 +140,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background:   #d4b500;
+  background: #d4b500;
 }
 
 /* Focus */
@@ -171,7 +178,7 @@ span[role="alert"]::before {
 }
 
 .feedback.success::before {
-  content: "✓ ";
+  content: "✓";
 }
 
 .feedback.error {
@@ -181,7 +188,7 @@ span[role="alert"]::before {
 }
 
 .feedback.error::before {
-  content: "⚠ ";
+  content: "⚠";
 }
 
 /* Links */
