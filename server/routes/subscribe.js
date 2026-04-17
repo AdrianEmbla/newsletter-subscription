@@ -20,7 +20,6 @@ router.post("/", (req, res) => {
       req.body.email,
       req.body.nyhetsbrev,
       new Date().toISOString(),
-      req.body.samtykke_tidspunkt,
     );
     res.status(201).json({ message: "Abonnement registrert" });
   } catch (err) {

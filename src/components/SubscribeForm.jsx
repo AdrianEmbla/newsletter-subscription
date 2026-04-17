@@ -39,7 +39,13 @@ function SubscribeForm() {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ navn, email, nyhetsbrev, samtykke, samtykke_tidspunkt: new Date().toLocaleString() }),
+        body: JSON.stringify({
+          navn,
+          email,
+          nyhetsbrev,
+          samtykke,
+          samtykke_tidspunkt: new Date().toLocaleString(),
+        }),
       });
       const data = await res.json();
 
