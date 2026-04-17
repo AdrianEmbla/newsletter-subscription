@@ -1,11 +1,11 @@
-const express = require(express);
+const express = require("express");
 const router = express.Router();
-const db = require / "../database";
+const db = require("../db");
 
 const { validateSubscription } = require("../validation");
 
 const insertStmt = db.prepare(
-  "INSERT INTO abonnenter (navn, email, nyhetsbrev, samtykke_) VALUES (?, ?, ?,?)",
+  "INSERT INTO abonnenter (navn, email, nyhetsbrev, samtykke_tidspunkt) VALUES (?, ?, ?, ?)",
 );
 
 router.post("/", (req, res) => {
