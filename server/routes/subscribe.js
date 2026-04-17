@@ -19,7 +19,7 @@ router.post("/", (req, res) => {
       req.body.navn.trim(),
       req.body.email,
       req.body.nyhetsbrev,
-      new Date().toISOString(),
+      new Date().toLocaleString(),
     );
     res.status(201).json({ message: "Abonnement registrert" });
   } catch (err) {
