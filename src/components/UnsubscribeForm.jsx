@@ -52,7 +52,7 @@ function UnsubscribeForm() {
       )}
 
       <div>
-        <label htmlFor="unsub-epost">E-postadresse *</label>
+        <label htmlFor="unsub-epost">E-post *</label>
         <input
           id="unsub-epost"
           type="email"
@@ -67,7 +67,7 @@ function UnsubscribeForm() {
           </span>
         )}
       </div>
-      <button type="submit">Avmeld</button>
+      <button type="submit">Avslutt abonnement</button>
     </form>
   );
 }

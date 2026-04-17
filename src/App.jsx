@@ -7,10 +7,6 @@ function App() {
       <h1>Nyhetsbrev</h1>
       <section>
         <h2>
-          <img
-            src="https://github.com/Adrian-kodehode/test-project/blob/main/public/To%20Love%20Ru/Site-logo%20(2).png?raw=true"
-            alt=""
-            />
             Abonner på nyhetsbrev
         </h2>
         <SubscribeForm />
