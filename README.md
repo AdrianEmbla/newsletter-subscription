@@ -90,9 +90,44 @@ docker run -p 3000:3000 newsletter
 }
 ```
 
+| Status | Response                                               |
+| ------ | ------------------------------------------------------ |
+| 201    | { "message": "Abonnement registrert" }                 |
+| 400    | { "errors": ["Navn er påkrevd", ...] }                 |
+| 409    | { "errors": ["E-postadresse er allerede registrert"] } |
+
+## POST /api/unsubscribe
+
+- **Request Body**:
+
+```json
+{
+  "email": "rito@example.com"
+}
 ```
-Status	Response
-201	{ "message": "Abonnement registrert" }
-400	{ "errors": ["Navn er påkrevd", ...] }
-409	{ "errors": ["E-postadresse er allerede registrert"] }
-```
+
+| Status | Response                               |
+| ------ | -------------------------------------- |
+| 200    | {"message": "Abonnement fjernet"}      |
+| 400    | {"errors": ["Ugyldig e-postadresse"]}  |
+| 404    | {"error": "E-postadresse ikke funnet"} |
+
+## Database
+
+SQLite database stored in `newsletter.db`. Table `abonnenter`:
+
+| Column             | Type    | Constraint      |
+| ------------------ | ------- | --------------- |
+| id                 | INTEGER | PRIMARY KEY     |
+| navn               | TEXT    | NOT NULL        |
+| email              | TEXT    | NOT NULL UNIQUE |
+| nyhetsbrev         | TEXT    | NOT NULL        |
+| samtykke           | BOOLEAN | NOT NULL        |
+| samtykke_tidspunkt | TEXT    | NOT NULL        |
+
+## GDPR
+
+- Consent timestamp recorded on subscription
+- Data delete on subscription
+- Privacy policy available at /personvern.html
+- GDPR routines for access, rectification, and deletion documented in `db.js`
