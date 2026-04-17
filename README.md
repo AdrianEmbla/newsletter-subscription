@@ -122,7 +122,6 @@ SQLite database stored in `newsletter.db`. Table `abonnenter`:
 | navn               | TEXT    | NOT NULL        |
 | email              | TEXT    | NOT NULL UNIQUE |
 | nyhetsbrev         | TEXT    | NOT NULL        |
-| samtykke           | BOOLEAN | NOT NULL        |
 | samtykke_tidspunkt | TEXT    | NOT NULL        |
 
 ## GDPR
