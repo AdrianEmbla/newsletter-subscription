@@ -32,12 +32,13 @@ newsletter-subscription/
 ├── src/
 │ ├── main.jsx # React entry
 │ ├── App.jsx # Main layout
-│ ├── App.css # Styling
 │ └── components/
 │ ├── SubscribeForm.jsx
 │ └── UnsubscribeForm.jsx
 ├── public/
 │ └── personvern.html # Privacy policy
+│ └── personvern.css # Privacy policy styling
+├── App.css # Styling
 ├── index.html # Vite entry
 ├── vite.config.js
 ├── Dockerfile
